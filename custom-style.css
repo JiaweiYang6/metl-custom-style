@@ -2,3 +2,7 @@ ul.navbar-nav > li > a, #hire-mega > a{
   font-size: 18px;
 }
 
+#bs-example-navbar-collapse-1{
+  padding-top:15px;
+  padding-bottom:10px;
+}
