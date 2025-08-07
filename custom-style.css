@@ -8,7 +8,7 @@
   padding-bottom:15px;
 }
 
-/* 放到 https://yourcdn.com/pdf-links.css 然后在 Theme > External CSS Link 填这个地址 */
+/* Manual pdf style */
 a[href$=".pdf"]{
   display:flex;align-items:center;gap:14px;
   border:1px solid #e0e0e0;border-radius:4px;padding:14px;
@@ -16,7 +16,7 @@ a[href$=".pdf"]{
   transition:box-shadow .2s,transform .15s;
 }
 a[href$=".pdf"]:hover{box-shadow:0 4px 8px rgba(0,0,0,.08);transform:translateY(-2px);}
-/* 小图标块 */
+
 a[href$=".pdf"]::before{
   content:"";
   display:inline-flex;
