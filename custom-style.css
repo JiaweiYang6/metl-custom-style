@@ -7,3 +7,17 @@
   padding-top:20px;
   padding-bottom:15px;
 }
+
+/* 放到 https://yourcdn.com/pdf-links.css 然后在 Theme > External CSS Link 填这个地址 */
+a[href$=".pdf"]{
+  display:flex;align-items:center;gap:14px;
+  border:1px solid #e0e0e0;border-radius:4px;padding:14px;
+  text-decoration:none;color:inherit;
+  transition:box-shadow .2s,transform .15s;
+}
+a[href$=".pdf"]:hover{box-shadow:0 4px 8px rgba(0,0,0,.08);transform:translateY(-2px);}
+/* 小图标块 */
+a[href$=".pdf"]::before{
+  content:"";display:block;width:48px;height:48px;border-radius:2px;
+  background:#ff5b10 url("https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/file-type-pdf.svg") center/60% no-repeat;
+}
