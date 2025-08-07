@@ -21,5 +21,5 @@ a[href$=".pdf"]::before{
   content:"";
   display:inline-flex;
   width:48px;height:48px;border-radius:2px;
-  background:url('https://metl.co.nz/wp-content/uploads/2025/08/metl-pdf-svg.png') center/60% no-repeat;
+  background:url('https://metl.co.nz/wp-content/uploads/2025/08/metl-pdf-svg.png') center/100% no-repeat;
 }
