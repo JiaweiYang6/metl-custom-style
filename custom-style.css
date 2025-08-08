@@ -23,3 +23,53 @@ a[href$=".pdf"]::before{
   width:48px;height:48px;border-radius:2px;
   background:url('https://metl.co.nz/wp-content/uploads/2025/08/metl-pdf-svg.png') center/100% no-repeat;
 }
+
+/* instruction pdf book accordion style */
+.custom-details {
+            padding: 20px;
+            border-radius: 5px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .custom-summary {
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        .custom-summary::-webkit-details-marker,
+        .custom-summary::marker {
+            display: none;
+        }
+
+        .summary-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .arrow-icon {
+            display: inline-flex;
+            align-items: center;
+            margin-left: 8px;
+            transition: transform 0.2s;
+        }
+
+        .arrow-svg {
+            transform: rotate(180deg);
+            transition: transform 0.2s;
+        }
+
+        .custom-details[open] .arrow-svg {
+            transform: rotate(0deg);
+        }
+
+        .manual-link {
+            display: block;
+            margin-top: 10px;
+            color: #0074d9;
+            text-decoration: underline;
+        }
